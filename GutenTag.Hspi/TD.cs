@@ -1,4 +1,4 @@
-﻿using Guten;
+﻿using GutenTag;
 
 namespace GutenTag.Hspi
 {
@@ -6,12 +6,12 @@ namespace GutenTag.Hspi
     {
         public TD(TdClass tdClass, string value = null) : base("td")
         {
-            //Attributes["class"] = new TagProperty(tdClass.Description());
+            Add("class", tdClass.Description());
 
-            //if (tdClass == TdClass.TableColumn)
-            //{
-            //    Attributes["align"] = new TagProperty("center");    
-            //}
+            if (tdClass == TdClass.TableColumn)
+            {
+                Attributes["align"] = new TagProperty("center");
+            }
 
             if (value != null)
             {

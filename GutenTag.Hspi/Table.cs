@@ -1,4 +1,4 @@
-﻿using Guten;
+﻿using GutenTag;
 
 namespace GutenTag.Hspi
 {
