@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>GutenTag.Hspi</id>
         <version>1.0.0</version>
@@ -9,6 +9,11 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Markup in Declarative C# for HomeSeer</description>
         <summary>Markup in Declarative C# for HomeSeer</summary>
+        <dependencies>
+            <group>
+                <dependency id="GutenTag" version="1.0.17" />
+            </group>
+        </dependencies>
     </metadata>
     <files>
         <file src="bin\Debug\netstandard2.0\GutenTag.Hspi.dll" target="lib\netstandard2.0\GutenTag.Hspi.dll" />
